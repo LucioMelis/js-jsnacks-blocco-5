@@ -57,7 +57,7 @@ const arrayZucchine = [
     }
 ]
 
-
+// Funzione che mi restituisce la somma una volta passati gli array
 function sommaArray(array) {
     let somma = 0;
     for (i = 0; i < array.length; i++) {
@@ -68,13 +68,11 @@ function sommaArray(array) {
 
 // Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 const zucchineMeno15 = [];
-
 const zucchinePiu15 = [];
-// passo gli array
-const zucchineMeno15Somma = sommaArray(zucchineMeno15);
 
-const zucchinePiu15Somma = sommaArray(zucchinePiu15);
-
+// applico il ciclo for per prendere gli elementi dell'array di oggetti
+// e con una condizione inserisco, in due array differenti, gli elementi che hanno una
+// determinata lunghezza.
 
 for (let i = 0; i < arrayZucchine.length; i++) {
     const elementiArray = arrayZucchine[i];
@@ -84,13 +82,15 @@ for (let i = 0; i < arrayZucchine.length; i++) {
     } else {
         zucchinePiu15.push(elementiArray);
     }
-
 }
 
-// Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 console.log(zucchineMeno15);
 console.log(zucchinePiu15);
 
+// passo gli array
+const zucchineMeno15Somma = sommaArray(zucchineMeno15);
+const zucchinePiu15Somma = sommaArray(zucchinePiu15);
+// Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 console.log(zucchineMeno15Somma, zucchinePiu15Somma);
 
 
