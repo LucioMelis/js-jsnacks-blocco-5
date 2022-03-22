@@ -5,7 +5,6 @@ console.log('JS OK!');
 // prendendo alternativamente gli elementi da uno e dall’altro,
 // es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 
-
 const arrayAlternato = alternaArray();
 console.log(arrayAlternato);
 
@@ -29,8 +28,6 @@ function alternaArray() {
 // La funzione ritornerà un nuovo array
 // con i valori che hanno la posizione compresa tra “a” e “b”
 
-
-
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const nuovoArray = functionReturnArray(array, 2, 10);
@@ -45,4 +42,3 @@ function functionReturnArray(arrayX, num1, num2) {
 
     return arreyNuovo
 }
-
