@@ -13,3 +13,5 @@ function stringaGirata(stringa) {
     // trasformo l'array di una stringa e la ritorno .JOIN --> RETURN
     return stringa.split('').reverse().join('')
 }
+
+
